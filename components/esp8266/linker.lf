@@ -1,0 +1,16 @@
+[mapping:pp]
+archive: libpp.a
+entries:
+    if ESP8266_WIFI_DEBUG_LOG_ENABLE = n:
+        * (noflash_text)
+
+[mapping:pp_dbg]
+archive: libpp_dbg.a
+entries:
+    if ESP8266_WIFI_DEBUG_LOG_ENABLE = y:
+        * (noflash_text)
+
+[mapping:phy]
+archive: libphy.a
+entries:
+    * (noflash_text)
